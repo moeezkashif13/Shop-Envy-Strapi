@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_placed_orders_placed_orders",
+  "info": {
+    "displayName": "Placed Orders",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ProductName": {
+      "type": "string",
+      "required": true
+    },
+    "PreviewImage": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

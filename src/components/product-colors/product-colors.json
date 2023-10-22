@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_product_colors_product_colors",
+  "info": {
+    "displayName": "Product Colors"
+  },
+  "options": {},
+  "attributes": {
+    "ColorHex": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_product_related_features_product_related_features",
+  "info": {
+    "displayName": "Product Related Features"
+  },
+  "options": {},
+  "attributes": {
+    "InfoType": {
+      "type": "string",
+      "required": true
+    },
+    "Answer": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

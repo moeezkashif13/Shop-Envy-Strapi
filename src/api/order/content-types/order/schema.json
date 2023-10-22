@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PlacedOrders": {
+      "displayName": "Placed Orders",
+      "type": "component",
+      "repeatable": true,
+      "component": "placed-orders.placed-orders"
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Order Received",
+        "Confirmed",
+        "Dispatched",
+        "Completed"
+      ]
+    },
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

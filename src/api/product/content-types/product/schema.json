@@ -1,0 +1,77 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "SKU": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext",
+      "required": true
+    },
+    "Price": {
+      "type": "float",
+      "required": true
+    },
+    "DiscountedPrice": {
+      "type": "float",
+      "required": true
+    },
+    "LeftInStock": {
+      "type": "string",
+      "required": true
+    },
+    "ProductRelatedFeatures": {
+      "displayName": "Product Related Features",
+      "type": "component",
+      "repeatable": true,
+      "component": "product-related-features.product-related-features"
+    },
+    "ProductImages": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "products"
+    },
+    "ProductPreviewImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ProductSizes": {
+      "type": "string",
+      "default": "Sizes Seperated by Comma",
+      "required": true
+    }
+  }
+}
